@@ -31,7 +31,7 @@ export class EmployeeController {
   }
 
   @Post()
-  create(@Body() employee: Partial<Employee>) {
+  create(@Body() employee: Employee) {
     return this.employeeService.create(employee);
   }
 
